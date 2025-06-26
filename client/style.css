@@ -5,6 +5,13 @@
             box-sizing: border-box;
             font-family: 'Arial', sans-serif;
         }
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
         .background
         {
             background-image: url('12345.jpg');
@@ -14,77 +21,111 @@
             width: 100%;
             height: 400px;
         }
-        body {
-            background-color: #f5f5f5;
-            color: #333;
-            line-height: 1.6;
-        }
-        
         a {
             text-decoration: none;
             color: inherit;
         }
-        
         ul {
             list-style: none;
         }
 
         /* Header Styles */
-        header {
-            background-color: #f4fDff;
-            color: #1C448E;
-            padding: 1rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: 0 2px 5px #938BA1;
-        }
+        
+        /* Container styling */
         .container {
-            width: 90%;
             max-width: 1200px;
             margin: 0 auto;
-        }
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .logo {
-            font-size: 2.5rem;
-            font-weight: bold;
-        }
-        .logo span {
-            color: #8e381c;
-        }
-        nav ul {
-            display: flex;
-            gap: 1.5rem;
-            font-size: 1.2rem;
-            font-weight: bold;
-        }
-         nav ul li {
-            margin-left: 1.5rem;
-        }
-         nav ul li a {
-            padding: 0.5rem;
-            transition: color 0.3s;
-        }
-        nav ul li a:hover {
-            color: #e74c3c;
-        }
-        .cart {
-            font-size: 1.2rem;
-            font-weight: bold;
-            position: relative;
-        }
-        #cart-count {
-            background: #e74c3c;
-            color: white;
-            border-radius: 50%;
-            padding: 2px 8px;
-            margin-left: 5px;
+            padding: 0 20px;
         }
 
+        /* Header layout */
+        .header-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 15px 0;
+        margin-top: 0;
+        }
+
+        /* Logo styling */
+        .logo {
+        font-size: 28px;
+        font-weight: bold;
+        color: #1c3e7f;
+        text-decoration: none;
+        }
+        .logo span {
+        color: #a83222;
+        }
+        .logo .co {
+        color: #1c3e7f;
+        }
+
+        /* Navigation links */
+        .nav-links ul {
+        display: flex;
+        gap: 20px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        }
+
+        .nav-links a {
+        text-decoration: none;
+        color: #1c3e7f;
+        font-weight: 500;
+        }
+
+        /* Cart icon */
+        .cart-icon {
+        margin-left: 20px;
+        color: #1c3e7f;
+        text-decoration: none;
+        font-size: 20px;
+        position: relative;
+        }
+
+        .cart-count {
+        position: absolute;
+        top: -8px;
+        right: -12px;
+        background-color: #a83222;
+        color: white;
+        border-radius: 50%;
+        padding: 2px 6px;
+        font-size: 12px;
+        }
+
+        /* Auth buttons */
+        .button-container {
+        display: flex;
+        gap: 10px;
+        }
+
+        .btn {
+        padding: 8px 14px;
+        background-color: #1c3e7f;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        font-weight: 500;
+        }
+        .btn.login {
+        background-color: #1c3e7f;
+        }
+        .btn.login:hover {
+        background-color: #8e381c;
+        color: #1c3e7f;
+        }
+
+        .btn.signup {
+        background-color: #1c3e7f;
+        }
+        .btn.signup:hover {
+        background-color: #8e381c;
+        color: #1c3e7f;
+        }
         /* Hero Section Styles */
         .hero {
             background-color: #1C448E;
@@ -94,12 +135,14 @@
             display: flex;
             align-items: center;
             color: white;
+            margin-top: 0;
         }
         .hero h1 {
             font-family: Arial, Helvetica, sans-serif;
             font-size: 3rem;
             color: #8e381c;
             margin-bottom: 1rem;
+            margin-top: 0;
         }
         .hero p {
             font-size: 1.5rem;

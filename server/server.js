@@ -38,7 +38,7 @@ pool.getConnection()
 
 // Basic API Route
 app.get('/', (req, res) => {
-    res.send('Hello from the back-end API!');
+    res.send('SERVER IS RUNNING!');
 });
 
 // Example API to fetch data (will connect to MySQL later)

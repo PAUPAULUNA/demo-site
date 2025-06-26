@@ -3,32 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Front Page</title>
+    <title>Jhitz&Co Homepage</title>
     <link rel="stylesheet" href="style.css">
 
     <body>
         <!--Header-->
         <header>
-             <div class="container">
-                <div class="header-content">
-                    <a href="#" class="logo">Jhitz<span>&</span><span2>Co</span2></a>
-                    <nav>
-                        <ul>
-                            <li><a href="front.html">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">More Products</a></li>
-                            <li>
-                                <a href="#" class="cart-icon">
-                                    <i>🛒</i>
-                                    <span class="cart-count">0</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-             </div>
-        </header>
+    <div class="container">
+        <div class="header-content">
+            <!-- Logo -->
+            <a href="index.html" class="logo">Jhitz<span>&</span><span class="co">Co</span></a>
+
+            <!-- Navigation Links -->
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="moreproducts.html">More Products</a></li>
+                </ul>
+            </nav>
+
+            <!-- Cart Icon -->
+            <a href="#" class="cart-icon">
+                <i>🛒</i>
+                <span class="cart-count">0</span>
+            </a>
+
+            <!-- Auth Buttons -->
+            <div class="button-container">
+                <a href="login.html" class="btn login">Log In</a>
+                <a href="signup.html" class="btn signup">Sign Up</a>
+            </div>
+        </div>
+    </div>
+</header>
+
         <!--Hero Section-->
         <section class="hero">
             <div class="container">
@@ -55,7 +65,7 @@
                     </div>
                     <div class="product-info">
                         <h3>Stylish Watch, Premium Quality</h3>
-                        <p>Premium Watch</p>
+                        <p>A classic vintage watch, perfect for you.</p>
                         <div class="product-price">
                             <span class="price">$49.99</span>
                             <button class="add-to-cart">Add to Cart</button>
@@ -68,7 +78,7 @@
                     </div>
                     <div class="product-info">
                         <h3>Comfortable Running Shoes</h3>
-                        <p>Outfit Shoes</p>
+                        <p>Handcrafted running shoes good for marathons.</p>
                         <div class="product-price">
                             <span class="price">$89.99</span>
                             <button class="add-to-cart">Add to Cart</button>
@@ -81,7 +91,7 @@
                     </div>
                     <div class="product-info">
                         <h3>Simple Black Shirt</h3>
-                        <p>Black Shirt</p>
+                        <p>Simple yet elegant, Plain but Comfy!</p>
                         <div class="product-price">
                             <span class="price">$39.99</span>
                             <button class="add-to-cart">Add to Cart</button>
@@ -94,7 +104,7 @@
                     </div>
                     <div class="product-info">
                         <h3>Classic Black Jeans</h3>
-                        <p>Fashion Jeans</p>
+                        <p>Stay cool and classy while wearing this classic black jeans.</p>
                         <div class="product-price">
                             <span class="price">$49.99</span>
                             <button class="add-to-cart">Add to Cart</button>
@@ -150,8 +160,7 @@
                 </div>
             </div>
         </footer>
-        <button id="fetchDataBtn">Fetch Data from Backend</button>
-    <div id="dataContainer"></div>
         <script src="script.js"></script>
+        <script src="frontend.js"></script>
     </body>
 </html>

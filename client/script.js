@@ -29,3 +29,16 @@ async function fetchData() {
         dataContainer.innerHTML = '<p>Failed to connect to the backend.</p>';
     }
 }
+app.post('/api/items', async (req, res) => {
+    const { name, description } = req.body;
+    if (!name) {
+        return res.status(400).json({ message: 'Item name is required.' });
+    }
+    try {
+        const [result] = await pool.query('INSERT INTO items (name, description) VALUES (?, ?)', [name, description]);
+        res.status(201).json({ id: result.insertId, name, description, message: 'Item added successfully.' });
+    } catch (error) {
+        console.error('Error adding item:', error);
+        res.status(500).json({ message: 'Error adding item' });
+    }
+});
