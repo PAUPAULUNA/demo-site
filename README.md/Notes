@@ -1,0 +1,9 @@
+##  Notes to remember, Please read!
+
+1. if you don't have any node.js, npm, and MySQL installed, ignore the server folder. These Softwares
+   are necessary to work for the backend development
+2. Only work with the client folder. If, and only if, you can't work for the backend.
+3. To make it easier for you to access the website in your browser. Install Live Server in your
+   extensions(or simply click ctrl + shift + x). Now right click on your html file interface and click 'open with live server'
+4. Do Not Forget to install Git!
+5. Please help me with the website designs

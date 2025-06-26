@@ -41,4 +41,4 @@ CREATE TABLE IF NOT EXISTS users (
 -- IMPORTANT: In a real application, passwords should be hashed BEFORE inserting.
 -- For demonstration, we'll use a placeholder.
 INSERT INTO users (username, email, password) VALUES
-('testuser', 'test@example.com', 'dummy_hashed_password_placeholder');
+('sample user', 'user@example.com', 'dummy_hashed_password_placeholder');
